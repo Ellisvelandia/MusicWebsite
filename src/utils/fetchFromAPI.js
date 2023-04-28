@@ -4,7 +4,12 @@ const BASE_URL = "https://youtube-v31.p.rapidapi.com";
 
 const options = {
   params: {
-    maxResults: "5",
+    part: "snippet",
+    type: "video",
+    videoCategoryId: "10",
+    chart: "mostPopular",
+    // regionCode: "MX",
+    maxResults: "15",
   },
   headers: {
     "X-RapidAPI-Key": import.meta.env.VITE_RAPID_API_KEY,

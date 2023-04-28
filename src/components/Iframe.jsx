@@ -10,6 +10,7 @@ const Iframe = ({ videoId }) => {
       allowFullScreen
       rel="noopener"
       loading="lazy"
+      className="md:rounded-lg w-full object-fill h-auto"
     ></iframe>
   );
 };
